@@ -36,17 +36,20 @@
         
         /* Header */
         .app-header {
-            background: linear-gradient(135deg, var(--primary), #e74c3c);
+            background: linear-gradient(to right, var(--primary), #e67e22);
             color: white;
             padding: 20px 15px;
             text-align: center;
-            position: sticky;
+            padding: 25px 0;
+            border-radius: 15px;
+            position: relative;
             top: 0;
             z-index: 100;
+            overflow: hidden;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
         }
         .logo {
-            width: 120px;        
+            width: 150px;
             height: auto;
             margin-bottom: 15px;
             border-radius: 50%;
@@ -58,7 +61,7 @@
                 width: 90px;
             }
         }
-        
+
         .restaurant-name {
             font-size: 1.8rem;
             font-weight: bold;
@@ -90,8 +93,7 @@
             overflow-x: auto;
             background: white;
             padding: 10px 5px;
-            position: sticky;
-            top: 107px; /* Header height + offline banner */
+            position: relative;
             z-index: 90;
             box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
             scrollbar-width: none; /* Firefox */
